@@ -1,0 +1,16 @@
+/* con lo de html y lo de body conseguimos que usar rem sea más sencillo */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;  /* 1rem=10px */
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    
+}
