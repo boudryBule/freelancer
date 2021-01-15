@@ -28,3 +28,24 @@ body {
 .titulo span {
     font-size: 2rem;
 }
+
+.contenedor {
+    width: 120rem;
+
+    /*
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto; */
+
+ /* puedes ponerlo todo en margin, va siguiendo las agujas del reloj, top right bottom left */
+    margin: 0 auto 0 auto; /* cuando se repiten los valores puedes poner los dos primeros   */
+}
+.nav-bg {
+    background-color: var(--secundario);
+
+}
+
+/* .navegacion-principal {
+    background-color: var(--secundario);
+} */

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñador Freelancer</title>
+    <link rel="preload" href="css/normalize.css" as="style"> 
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style"> <!-- para que lo cargue de antes y vaya más rapido -->
     <link rel="stylesheet" href="css/styles.css"> <!-- el stylesheet indica que es una hoja de estilos -->
@@ -13,16 +15,16 @@
         <h1 class="titulo">Juan Manuel Boudry León <span>Freelancer</span></h1>
     </header>
 
-
-    <nav>
-        <!-- shift + alt + felchas de direccion y te copia la misma linea debajo -->
-        <a href="#">Inicio</a> <!-- le dejas puesto el # para dejar indicado que va a ser un enlace  -->
-        <a href="#">Sobre mi</a> <!-- le dejas puesto el # para dejar indicado que va a ser un enlace  -->
-        <a href="#">Clientes</a> <!-- le dejas puesto el # para dejar indicado que va a ser un enlace  -->
-        <a href="#">Contacto</a> <!-- le dejas puesto el # para dejar indicado que va a ser un enlace  -->
-    </nav>
-
-    <img src="/img/hero.jpg">
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <!-- shift + alt + felchas de direccion y te copia la misma linea debajo -->
+            <a href="#">Inicio</a> <!-- le dejas puesto el # para dejar indicado que va a ser un enlace  -->
+            <a href="#">Sobre mi</a> <!-- le dejas puesto el # para dejar indicado que va a ser un enlace  -->
+            <a href="#">Clientes</a> <!-- le dejas puesto el # para dejar indicado que va a ser un enlace  -->
+            <a href="#">Contacto</a> <!-- le dejas puesto el # para dejar indicado que va a ser un enlace  -->
+        </nav>
+    </div>
+    <!--  <img src="/img/hero.jpg">  -->
 
     <section>
         <h2 class="titulo"> Diseño y desarrollo web <span>Freelancer</span></h2>
