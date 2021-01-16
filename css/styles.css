@@ -31,21 +31,30 @@ body {
 
 .contenedor {
     width: 120rem;
-
-    /*
+  /*   margin: 0 auto; */
+    
     margin-top: 0;
     margin-bottom: 0;
     margin-right: auto;
-    margin-left: auto; */
+    margin-left: auto;
 
  /* puedes ponerlo todo en margin, va siguiendo las agujas del reloj, top right bottom left */
-    margin: 0 auto 0 auto; /* cuando se repiten los valores puedes poner los dos primeros   */
+   /*  margin: 0 50; */ /* cuando se repiten los valores puedes poner los dos primeros   */
 }
 .nav-bg {
     background-color: var(--secundario);
 
 }
 
-/* .navegacion-principal {
-    background-color: var(--secundario);
-} */
+.navegacion-principal {
+    /* background-color: var(--secundario); */
+    padding: 1rem;
+    display: flex;  
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+  /*   background-color: var(--primario); */
+  color: var(--blanco);
+  text-decoration: none;
+}
