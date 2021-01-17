@@ -48,13 +48,22 @@ body {
 
 .navegacion-principal {
     /* background-color: var(--secundario); */
-    padding: 1rem;
+   /* padding: 1rem;  si lo ponemos aquí, el espacio de relleno del link no va a funcionar de forma correcta */
     display: flex;  
     justify-content: space-between;
 }
 
 .navegacion-principal a {
   /*   background-color: var(--primario); */
+  padding: 1rem; /* al ponerlo aquí directamente en el link, va a rellenar toda la barra del color al pasar el raton
+  ademas de que va a poner el grosor del navegador como le indiquemos */
   color: var(--blanco);
   text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700; /* para que esté en negrita (nos descargamos grosor 400 y 700 en google fonts */
+}
+
+.navegacion-principal a:hover {   /* para que tenga color cuando pasamos el ratón por encima del link */
+    background-color: var(--primario);  
+    color: var(--oscuro); /* el color del que se va a poner el enlace al pasar el raton por encima */
 }
