@@ -76,3 +76,9 @@ body {
     color: var(--oscuro); /* el color del que se va a poner el enlace al pasar el raton por encima */
 }
 
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat; /* para que no se repita la imagen en mosaico */
+    background-size: cover;
+}
