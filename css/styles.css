@@ -10,6 +10,12 @@
 /* con lo de html y lo de body conseguimos que usar rem sea más sencillo */
 html {
     font-size: 62.5%;
+    box-sizing: border-box; /* con esta linea y la siguiente arreglamos todos los problemas que nos pueda dar
+    el box sizing
+    si le das de tamaño  a una imagen 450px aunque le apliques padding seguirá midiendo lo mismo */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -80,5 +86,5 @@ body {
 .hero {
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat; /* para que no se repita la imagen en mosaico */
-    background-size: cover;
+    background-size: cover; 
 }
