@@ -22,13 +22,29 @@ body {
     font-size: 16px;  /* 1rem=10px */
     font-family: 'Krub', sans-serif;
 
+} 
+
+/* Design system */
+h1 {
+    font-size: 3.8rem;
+
 }
 
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    text-align:center;
+}
 .titulo{
-    text-align: center;
-    font-size: 3.8rem;
+/*     text-align: center;
+ */    /* font-size: 3.8rem; */
  
-    ;
 }
 
 .titulo span {
@@ -91,10 +107,30 @@ body {
     position: relative;
 }
 
-.hero-contenedor {
+.contenido-hero {
     position: absolute;
     background-color: rgba(0,0,0, .7);   /* opcion antigua para oscurecer el fondo */
     background-color: rgb(0 0 0 / 70%);
     width: 100%;
     height: 100%;
+
+
+    /* estas 4 lineas nos valen para centrar el contenido tanto vertical como horizontalmente */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+}
+
+
+.contenido-hero h2,
+.contenido-hero p { /* vamos a coger tanto el h2 como el parrafo de sólo contenido-hero */
+    color: var(--blanco);
+
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end; /* está alineado horizontalmente, con esto lo centramos verticalmente y como 
+    queremos ponerlo abajo pues ponemos flex-end */
 }
