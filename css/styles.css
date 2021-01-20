@@ -63,6 +63,27 @@ h1,h2,h3 {
  /* puedes ponerlo todo en margin, va siguiendo las agujas del reloj, top right bottom left */
    /*  margin: 0 50; */ /* cuando se repiten los valores puedes poner los dos primeros   */
 }
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem; /* para que el boton tenga las esquinas redondeadas */
+    width: 90%;
+    text-align: center;
+
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width:auto;
+    }
+}
 .nav-bg {
     background-color: var(--secundario);
 
