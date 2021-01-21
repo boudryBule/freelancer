@@ -57,6 +57,23 @@ body {
 
 }
 
+
+@media (min-width: 768px) {
+    .boton {
+        width:auto;
+    }
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,122,0.48);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,122,0.48);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,122,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem; /* para poner esquinas redondeadas  */
+}
+
+
 /* Design system (tipografia) */
 h1 {
     font-size: 3.8rem;
@@ -88,11 +105,6 @@ h1,h2,h3 {
 
 
 
-@media (min-width: 768px) {
-    .boton {
-        width:auto;
-    }
-}
 /* Navegacion principal */
 .nav-bg {
     background-color: var(--secundario);
@@ -137,6 +149,7 @@ h1,h2,h3 {
     background-size: cover; 
     height: 450px;
     position: relative;
+    margin-bottom: 2rem; /* para separacion con la siguiente seccion */
 }
 
 .contenido-hero {
