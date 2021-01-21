@@ -7,6 +7,8 @@
     --gris: #757575; 
 }
 
+/* Globales */
+
 /* con lo de html y lo de body conseguimos que usar rem sea más sencillo */
 html {
     font-size: 62.5%;
@@ -23,34 +25,6 @@ body {
     font-family: 'Krub', sans-serif;
 
 } 
-
-/* Design system */
-h1 {
-    font-size: 3.8rem;
-
-}
-
-h2 {
-    font-size: 2.8rem;
-}
-
-h3 {
-    font-size: 1.8rem;
-}
-
-h1,h2,h3 {
-    text-align:center;
-}
-.titulo{
-/*     text-align: center;
- */    /* font-size: 3.8rem; */
- 
-}
-
-.titulo span {
-    font-size: 2rem;
-}
-
 .contenedor {
     max-width: 120rem; /* así toma 120rem si hay posibilidad, si no, toma el máximo de la pantalla */
   /*   margin: 0 auto; */
@@ -79,11 +53,43 @@ h1,h2,h3 {
 
 }
 
+/* Design system (tipografia) */
+h1 {
+    font-size: 3.8rem;
+
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    text-align:center;
+}
+ /* Titulos */
+.titulo{
+/*     text-align: center;
+ */    /* font-size: 3.8rem; */
+    font-size: 2rem;
+ 
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+
+
 @media (min-width: 768px) {
     .boton {
         width:auto;
     }
 }
+/* Navegacion principal */
 .nav-bg {
     background-color: var(--secundario);
 
@@ -120,6 +126,7 @@ h1,h2,h3 {
 }
 
 
+/* hero */
 .hero {
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat; /* para que no se repita la imagen en mosaico */
@@ -150,7 +157,7 @@ h1,h2,h3 {
 
 }
 
-.ubicacion {
+.contenido-hero.ubicacion {
     display: flex;
     align-items: flex-end; /* está alineado horizontalmente, con esto lo centramos verticalmente y como 
     queremos ponerlo abajo pues ponemos flex-end */
