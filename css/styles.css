@@ -179,3 +179,26 @@ h1,h2,h3 {
     align-items: flex-end; /* está alineado horizontalmente, con esto lo centramos verticalmente y como 
     queremos ponerlo abajo pues ponemos flex-end */
 }
+
+/* Servicios */
+
+/* .servicios {
+    display: grid; 
+    /* para dividirlo en 3 puedes poner o el porcentaje o las fracciones que quieres */
+    /*grid-template-columns: 33.3% 33.3% 33.3%; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* también puedes ponerlo más corto */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* también pueden ponerse ambos a la vez, primero va el rows y luego el columns
+    grid: 200px 800px / 300px 300px;
+    */
+
+ 
+
+@media (min-width: 768px) { /* aplicará grid cuando sean más de 768px y cuando sea menos se quedará en columna */
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
