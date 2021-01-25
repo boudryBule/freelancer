@@ -203,3 +203,30 @@ h1,h2,h3 {
         column-gap: 1rem;
     }
 }
+
+.servicio { /* para cambiar lo que sería el circulo amarillo tenemos que ir al padre */
+    display:flex;
+    flex-direction:column; /* cambiamos a dirección por columnas */
+    align-items: center;  
+}
+
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: 400;
+  
+}
+
+.servicio p {
+    line-height: 2; /* para cambiar el interlineado */
+    text-align: center;
+}
+
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%; /* si tienes un cuadrado (15x15) y le pones un 50% de redondeo en bordes te sale un circulo */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
