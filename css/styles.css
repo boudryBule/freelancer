@@ -54,7 +54,7 @@ body {
     border-radius: .5rem; /* para que el boton tenga las esquinas redondeadas */
     width: 90%;
     text-align: center;
-
+    border:none;
 }
 
 
@@ -62,6 +62,10 @@ body {
     .boton {
         width:auto;
     }
+}
+.boton:hover { /* esto es lo de que se ilumine cuando pasas el raton encima */
+
+    cursor:pointer;
 }
 
 .sombra {
@@ -103,8 +107,23 @@ h1,h2,h3 {
     font-size: 2rem;
 }
 
+/* utilidades */
 
+.w-sm-100{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100{
+        width: auto;
+    }
+}
+.flex {
+    display:flex;
+}
 
+.alinear-derecha {
+    justify-content: flex-end;
+}
 /* Navegacion principal */
 .nav-bg {
     background-color: var(--secundario);
@@ -230,3 +249,56 @@ h1,h2,h3 {
     justify-content: space-evenly;
     align-items: center;
 }
+
+/* contacto */
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%); /* compara que es más pequeño, los 60rem o el total
+                            asi cuando se tiene un dispositivo más pequeño ocupa todo */
+    margin: 0 auto; /* no puedo usar justify content porque el padre no usa flex */
+    padding: 2rem; /* para que quede bien centrado */
+    border-radius: 1rem;
+
+}
+
+.formulario fieldset {
+
+    border: none;
+
+}
+
+.formulario legend {
+    text-align:center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;  
+    color: var(--primario);
+}
+
+.contenedor-campos {
+
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    border:none; /* supuestamente quita un recuardo gris que no llego a ver */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+/* .enviar .boton { /* hereda la clase boton y si tiene la clase enviar pone el width */
+/*     width: 100%;
+} 
+ */
