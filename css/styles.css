@@ -16,22 +16,27 @@ html {
     box-sizing: border-box; /* con esta linea y la siguiente arreglamos todos los problemas que nos pueda dar
     el box sizing
     si le das de tamaño  a una imagen 450px aunque le apliques padding seguirá midiendo lo mismo */
-    scroll-snap-type: y proximity; /*  para que el scroll sea hacia abajo ponemos la y
-                                    esta función nos sirve para que al hacer scroll se vaya parando en cada seccion */
-    /* tambien existe proximity  mandatory*/
+    @media (min-width: 768px) {
+        scroll-snap-type: y proximity; /*  para que el scroll sea hacia abajo ponemos la y
+        esta función nos sirve para que al hacer scroll se vaya parando en cada seccion */
+        /* tambien existe proximity  mandatory*/
+    }
+
   
 }
 /* scroll snap */
 /* con esta funcion y el scroll snap que hemos puesto en la parte de html del css hacemos que se pare en la parte de 
 los servicios */
 
-.servicios,
-.navegacion-principal,
-.formulario {
-    scroll-snap-align:center;
-    scroll-snap-stop: always;
-}
 
+@media (min-width: 768px) {
+    .servicios,
+    .navegacion-principal,
+    .formulario {
+        scroll-snap-align:center;
+        scroll-snap-stop: always;
+}
+}
 
 *, *:before, *:after {
     box-sizing: inherit;
