@@ -16,9 +16,9 @@ html {
     box-sizing: border-box; /* con esta linea y la siguiente arreglamos todos los problemas que nos pueda dar
     el box sizing
     si le das de tamaño  a una imagen 450px aunque le apliques padding seguirá midiendo lo mismo */
-    scroll-snap-type: y mandatory; /*  para que el scroll sea hacia abajo ponemos la y
+    scroll-snap-type: y proximity; /*  para que el scroll sea hacia abajo ponemos la y
                                     esta función nos sirve para que al hacer scroll se vaya parando en cada seccion */
-    /* tambien existe proximity */
+    /* tambien existe proximity  mandatory*/
   
 }
 /* scroll snap */
@@ -115,7 +115,7 @@ h1,h2,h3 {
 .titulo{
 /*     text-align: center;
  */    /* font-size: 3.8rem; */
-    font-size: 2rem;
+    font-size: 3rem;
  
 }
 
