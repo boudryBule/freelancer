@@ -1,4 +1,4 @@
 # freelancer
 
-Primer proyecto aplicando css a un html.
+Primer proyecto del curso de desarrollo web de Udemy.
 https://primerproyectojuanmanuelboudryleon.netlify.app/
